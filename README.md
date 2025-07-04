@@ -13,7 +13,7 @@ Tech Stack
 Frontend: Next.js (React)
 Authentication: Clerk.dev
 Styling: Tailwind CSS / CSS Modules
-Backend: (Optional) – API routes (or integrated with backend services like MongoDB, PostgreSQL, etc.)
+Backend: integrated with backend service MongoDB
 
 
 Future Improvements
