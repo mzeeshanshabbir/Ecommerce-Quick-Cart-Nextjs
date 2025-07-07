@@ -18,10 +18,15 @@ async function connectDB(){
             bufferCommands:false
         }
 
-        cached.promise = mongoose.connect(`${process.env.MONGODB_URI}/quickcart`,opts).then(mongoose => {
+        if (!process.env.MONGODB_URI) {
+            throw new Error('MONGODB_URI is not defined');
+        }
+
+        cached.promise = mongoose.connect(`${process.env.MONGODB_URI}/QuickCart E-commerce`,opts).then(mongoose => {
             return mongoose
         })
     }
+
 
     cached.conn = cached.promise
     return cached.conn
