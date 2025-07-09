@@ -22,7 +22,7 @@ async function connectDB(){
             throw new Error('MONGODB_URI is not defined');
         }
 
-        cached.promise = mongoose.connect(`${process.env.MONGODB_URI}/quick-cart`,opts).then(mongoose => {
+        cached.promise = mongoose.connect(`${process.env.MONGODB_URI}/Ecommerce-quick-cart-Nextjs`,opts).then(mongoose => {
             return mongoose
         })
     }
